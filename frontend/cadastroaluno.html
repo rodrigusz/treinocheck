@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <title>Cadastro</title>
+</head>
+
+<style>
+    .divider:after,
+    .divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+    }
+
+    .h-custom {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    body {
+        background-color: rgb(241, 239, 239);
+    }
+</style>
+
+<body>
+
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4">TREINO CHECK</a>
+        </div>
+
+        <div class="d-flex">
+            <button style="margin-right: 15px;" id="buttonVoltar" class="btn btn-primary">Voltar</button>
+        </div>
+    </nav>
+
+    <!-- Tabela -->
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 text-dark-emphasis">
+                    <img src="/images/cadastrofoto.png" class="img-fluid" height="999px" width="999px" alt="Imagem ilustrativa">
+                </div>
+
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <p class="fs-1 fw-bold">Cadastro</p>
+                    <br>
+                    
+                    <form>
+                        <!-- Nome -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="nome">Nome:</label>
+                            <input type="text" id="nome" class="form-control form-control-lg" placeholder="Digite seu nome" />
+                            <span id="labelNome" class="error"></span>
+                        </div>
+                    
+                        <!-- CPF -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="cpf">CPF:</label>
+                            <input type="text" id="cpf" class="form-control form-control-lg" placeholder="Digite seu CPF" />
+                            <span id="labelCpf" class="error"></span>
+                        </div>
+                    
+                        <!-- EMAIL -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="email">E-mail:</label>
+                            <input type="email" id="email" class="form-control form-control-lg" placeholder="Digite seu E-mail" />
+                            <span id="labelEmail" class="error"></span>
+                        </div>
+                    
+                        <!-- Senha -->
+                        <div class="form-outline mb-3">
+                            <label class="form-label" for="senha">Senha:</label>
+                            <input type="password" id="senha" class="form-control form-control-lg" placeholder="Digite sua senha" />
+                            <span id="labelSenha" class="error"></span>
+                        </div>
+                        
+                        <!-- Botão -->
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="button" id="btnCadastrar" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="cadastrar()">Cadastre-se</button>
+                            <p id="msgError" class="error"></p>
+                            <p id="msgSuccess" class="success"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+        <div class="text-white mb-3 mb-md-0">
+            COPYRIGHT © 2025. Todos os direitos reservados.
+        </div>
+    </div>
+
+    <script src="/js/cadastroaluno.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

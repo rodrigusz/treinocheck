@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Frequência</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content-container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .modal-footer {
+            justify-content: center;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tabela -->
+    <div class="content-container">
+        <a class="mx-2">
+            <h1 class="text-white fw-bold">Selecione sua frequência abaixo:</h1>
+        </a>
+
+        <div class="mb-3">
+            <h6 class="text-white fw-bold">Escolha a data do treino:</h6>
+            <input type="date" class="form-control" id="date" aria-label="Escolha a data do treino">
+        </div>
+
+        <h6 class="text-white fw-bold">Marque qual foi o tipo de treino:</h6>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="treino" id="inferior" value="inferior">
+            <label class="form-check-label text-white" for="inferior">Inferior</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="treino" id="superior" value="superior">
+            <label class="form-check-label text-white" for="superior">Superior</label>
+        </div>
+
+        <div class="modal-footer mt-4">
+            <button type="button" class="btn btn-secondary" id="buttonFechar">Fechar</button>
+            <button type="button" class="btn btn-primary" id="saveButton">Adicionar</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/addfrequencia.js"></script>
+</body>
+</html>

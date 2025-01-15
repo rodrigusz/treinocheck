@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Fichas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <style>
+        body {
+            background-color: rgba(216, 207, 207, 0.781);
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .form-check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .checkbox-container {
+            width: 300px;
+            text-align: center;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4">TREINO CHECK</a>
+        </div>
+
+        <div class="d-flex">
+            <button style="margin-right: 15px;" id="voltar" class="btn btn-primary">Voltar</button>
+        </div>        
+    </nav>
+    
+    <br>
+
+    <!--Tabela de exercicios-->
+    <p class="text-center fs-1 fw-bold">Marque seu treino abaixo:</p>
+
+    <p class="text-center fs-2">Perna:</p>
+
+    <div class="row" id="perna">
+        <div class="checkbox-container">
+            <p class="fs-4">Leg Press (Prensa de pernas)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna1">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Cadeira extensora (Leg Extension)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna2">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Cadeira flexora (Leg Curl)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna3">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Afundo com barra (Barbell Lunge)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna4">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row" id="perna">
+        <div class="checkbox-container">
+            <p class="fs-4">Afundo com halteres (Dumbbell Lunge)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna5">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Step-up com halteres (Dumbbell Step-Up)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna6">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Stiff (Stiff-legged Deadlift)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna7">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Deadlift convencional (Conventional Deadlift)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna8">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row" id="perna">
+        <div class="checkbox-container">
+            <p class="fs-4">Pistol squat (Agachamento unilateral)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna9">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Panturrilha na máquina (Calf Raise Machine)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna10">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Panturrilha em pé (Standing Calf Raise)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna11">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Panturrilha sentado (Seated Calf Raise)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="treinoperna12">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p class="text-center fs-2">Peito:</p>
+
+    <div class="row" id="peito">
+        <div class="checkbox-container">
+            <p class="fs-4">Supino reto com barra</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="peito1">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Supino inclinado com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="peito2">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Crucifixo com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="peito3">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Crossover na polia</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="peito4">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Flexão de braço (peso corporal)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="peito5">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Peck Deck (voador máquina)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="peito6">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p class="text-center fs-2">Ombro:</p>
+
+    <div class="row" id="ombro">
+        <div class="checkbox-container">
+            <p class="fs-4">Desenvolvimento com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="ombro1">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Elevação lateral com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="ombro2">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Elevação frontal com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="ombro3">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Face Pull na polia</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="ombro4">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Desenvolvimento militar com barra</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="ombro5">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Arnold Press</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="ombro6">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p class="text-center fs-2">Tríceps:</p>
+
+    <div class="row" id="triceps">
+        <div class="checkbox-container">
+            <p class="fs-4">Supino fechado com barra</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="triceps1">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Tríceps pulley (polia alta)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="triceps2">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Extensão de tríceps com halteres (kickback)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="triceps3">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Paralelas (peso corporal ou com carga)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="triceps4">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">French Press (extensão com barra EZ)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="triceps5">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Tríceps testa com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="triceps6">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p class="text-center fs-2">Costas:</p>
+
+    <div class="row" id="costas">
+        <div class="checkbox-container">
+            <p class="fs-4">Puxada na barra fixa</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="costas1">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Remada curvada com barra</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="costas2">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Pulldown na polia</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="costas3">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Remada unilateral com halter</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="costas4">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Deadlift (levantamento terra)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="costas5">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Superman (peso corporal)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="costas6">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p class="text-center fs-2">Trapézio:</p>
+
+    <div class="row" id="trapezio">
+        <div class="checkbox-container">
+            <p class="fs-4">Encolhimento com barra (Shrugs)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="trapezio1">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Remada alta com barra</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="trapezio2">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Face Pull na polia</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="trapezio3">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Encolhimento com halteres inclinados</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="trapezio4">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Y-Raise com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="trapezio5">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Snatch grip Deadlift (levantamento terra com pegada larga)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="trapezio6">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p class="text-center fs-2">Bíceps:</p>
+
+    <div class="row" id="biceps">
+        <div class="checkbox-container">
+            <p class="fs-4">Rosca direta com barra</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="biceps1">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Rosca martelo com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="biceps2">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Rosca alternada com halteres</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="biceps3">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Rosca scott (banco inclinado)</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="biceps4">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Rosca concentrada</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="biceps5">
+                </div>
+            </form>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="fs-4">Rosca na polia baixa com corda</p>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="biceps6">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <div class="btn-container">
+        <button class="btn btn-primary" id="finalizar">Finalizar</button>
+    </div>
+    <br>
+
+    <!-- Rodapé -->
+    <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+        <div class="text-white mb-3 mb-md-0">
+            COPYRIGHT © 2025. Todos os direitos reservados.
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/criarficha.js"></script>
+
+</body>
+</html>
